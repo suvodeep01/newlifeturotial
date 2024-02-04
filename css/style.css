@@ -1,0 +1,552 @@
+@font-face {
+  font-family: "Stay Dreaming";
+  src: url(../fonts/Stay\ Dreaming\ 400.otf);
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: #EEFAFF !important;
+}
+
+/* start header */
+.header{
+    background-color: #EEFAFF;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+.header_logo{
+    position: relative;
+}
+
+.header_logo img{
+    width: 90%;
+    height: auto;
+}
+
+.header_logo::before{
+    content: "";
+    position: absolute;
+    top: 9px;
+    right: -47px;
+    height: 60px;
+    width: 2.5px;
+    background-color: #E18526;
+}
+
+.header_con{
+    position: relative;
+}
+
+.header_con::before{
+    content: "";
+    position: absolute;
+    top: -1px;
+    right: 17px;
+    height: 60px;
+    width: 2.5px;
+    background-color: #0578B9;
+}
+
+.header_con h3{
+    font-size: 20px;
+    margin: 0;
+    color: #252525;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.header_con h4{
+    font-size: 18px;
+    margin: 0;
+    color: #0578B9;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 8px;
+}
+
+.header_con h4 span{
+    color: #E18526;
+    font-size: 16px;
+}
+
+.header_contact span{
+    margin-right: 14px;
+    display: inline-block;
+    margin-top: 8px;
+}
+
+.header_contact span i{
+    font-size: 20px;
+    color: #E18526;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.header_contact span p{
+    font-size: 16px;
+    color: #0578B9;
+    display: inline-block;
+    margin: 0;
+    font-weight: 600;
+    vertical-align: top;
+}
+/* end header */
+
+/* start content */
+.content{
+    text-align: center;
+    background-color: #EEFAFF;
+}
+
+
+.frame_img img{
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+}
+
+.content_img img{
+    width: 159px;
+    height: 164px;
+    position: absolute;
+    top: 156px;
+    left: 68px;
+    transform: rotate(-6deg);
+}
+
+.frame_img p{
+    position: absolute;
+    top: 175px;
+    right: 85px;
+    font-size: 22px;
+    margin: 0;
+}
+
+.upload_img{
+    text-align: center;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.content_btn{
+    text-align: center;
+    margin-top: 20px;
+}
+
+#upload_btn{
+    display: inline-block;
+    background-color: #AC12C6;
+    color: white;
+    padding: 12px 25px;
+    font-family: sans-serif;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#upload_btn:hover{
+    background-color: #8d07a5;
+}
+
+.text_input{
+    text-align: center;
+    font-size: 0;
+}
+
+.text_input input{
+    width: 39%;
+    padding: 11px 20px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #fff;
+    background-color: #0578B9;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+#name_input{
+    margin-right: 10px;
+    border-radius: 5px !important;
+}
+
+.text_input input::placeholder{
+    color: #fff;
+}
+
+.text_input a{
+    padding: 11px 0;
+    width: 100px;
+    background-color: #67C20E;
+    border: none;
+    outline: none;
+    color: #fff;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 16px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#output_txt{
+    font-family: 'Roboto Slab', serif;
+    font-size: 36px;
+    /* background: linear-gradient(to top, #F86F68 28%, #FC5A87 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+    color: #FB617D;
+    letter-spacing: 1px;
+    font-weight: bolder;
+}
+
+#output_txt2{
+    /* font-family: 'Mountains of Christmas', serif; */
+    font-family: 'Festive', cursive;
+    font-size: 30px;
+    /* background: linear-gradient(to top, #434EE6 0%, #5C1ECA 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+    color: #087CB8;
+    position: absolute;
+    top: 39px;
+    right: 0px;
+    letter-spacing: 2px;
+}
+
+.text_input a:hover{
+    background-color: #5cad0b;
+    color: #fff;
+    text-decoration: none;
+}
+
+.download_btn{
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.download_btn a{
+    padding: 12px 0;
+    width: 150px;
+    background-color: #AC12C6;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    display: inline-block;
+    border-radius: 10px;
+    vertical-align: top;
+    margin-left: 10px;
+}
+
+.download_btn a:hover{
+    background-color: #8d07a5;
+    color: #fff;
+    text-decoration: none;
+}
+/* end content */
+
+/* start footer */
+.footer{
+    /* background-color: #EEFAFF; */
+    padding: 20px 0;
+    width: 100%;
+    /* margin-top: 55px; */
+}
+
+.footer_con h6{
+    color: #0578B9;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+}
+/* end footer */
+
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.sidebar {
+  position: fixed;
+  height: 100%;
+  width: 260px;
+  background: #11101d;
+  padding: 15px;
+  z-index: 99;
+}
+.logo {
+  font-size: 25px;
+  padding: 0 15px;
+}
+.sidebar a {
+  color: #fff;
+  text-decoration: none;
+}
+.menu-content {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+}
+.menu-content::-webkit-scrollbar {
+  display: none;
+}
+.menu-items {
+  height: 100%;
+  width: 100%;
+  list-style: none;
+  transition: all 0.4s ease;
+}
+.submenu-active .menu-items {
+  transform: translateX(-56%);
+}
+.menu-title {
+  color: #fff;
+  font-size: 14px;
+  padding: 15px 20px;
+}
+
+.item a{
+    margin-top: 10px;
+}
+
+.item a,
+.submenu-item {
+  padding: 16px;
+  display: inline-block;
+  width: 100%;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.1);
+}
+.item i {
+  font-size: 12px;
+}
+.item a:hover{
+    text-decoration: none;
+    color: #fff;
+}
+
+.item a:hover,
+.submenu-item:hover,
+.submenu .menu-title:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+.submenu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  cursor: pointer;
+}
+.submenu {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: calc(-100% - 26px);
+  height: calc(100% + 100vh);
+  background: #11101d;
+  display: none;
+}
+.show-submenu ~ .submenu {
+  display: block;
+}
+.submenu .menu-title {
+  border-radius: 12px;
+  cursor: pointer;
+}
+.submenu .menu-title i {
+  margin-right: 10px;
+}
+.navbar,
+.main {
+  left: 260px;
+  width: calc(100% - 260px);
+  transition: all 0.5s ease;
+  z-index: 1000;
+}
+.sidebar.close ~ .navbar,
+.sidebar.close ~ .main {
+  left: 0;
+  width: 100%;
+}
+.navbar {
+  position: fixed;
+  color: #fff;
+  padding: 15px 20px;
+  font-size: 25px;
+  background: #11101D;
+  cursor: pointer;
+}
+.navbar #sidebar-close {
+  cursor: pointer;
+}
+.main {
+  position: relative;
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  background: #e7f2fd;
+}
+.main h1 {
+  color: #11101d;
+  font-size: 40px;
+  text-align: center;
+}
+
+/* frame 2 start */
+.content_img2 img{
+  width: 147px;
+    height: 146px;
+    position: absolute;
+    top: 189px;
+    left: 209px;
+    transform: rotate(357deg);
+}
+
+#output_txt3{
+  letter-spacing: 1px;
+  font-family: 'Stay Dreaming', sans-serif !important;
+  
+}
+
+#output_txt4{
+  letter-spacing: 2px;
+  font-family: 'Stay Dreaming', sans-serif !important;
+}
+
+#frame2_txt{
+  position: absolute;
+  bottom: 150px;
+  top: unset;
+  right: 210px;
+  font-size: 28px;
+  margin: 0;
+  color: #001C60;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+#display_img img{
+  object-fit: cover;
+}
+/* start frame 3 */
+.certificate_img{
+  margin-top: 30px;
+}
+.certificate_img img{
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.certificate_txt{
+  width: 655px;
+  position: absolute;
+  top: 275px;
+  left: 96px;
+}
+
+.certificate_img p{
+  font-size: 14px;
+  margin: 0;
+  color: #000;
+}
+
+.certificate_txt input{
+  text-align: center !important;
+  text-transform: capitalize;
+}
+
+#span_b{
+  /* height: 20px; */
+  width: 190px !important;
+  border: none;
+  border-bottom: 2px dotted;
+  background: transparent;
+  outline: none;
+  font-size: 14px;
+  vertical-align: 7px;
+  padding: 0px 0;
+  font-weight: bold;
+}
+
+#span_c{
+  width: 136px !important;
+  border: none;
+  border-bottom: 2px dotted;
+  background: transparent;
+  outline: none;
+  font-size: 14px;
+  vertical-align: 7px;
+  padding: 0px 0;
+  font-weight: bold;
+}
+
+#span_d{
+  width: 150px !important;
+  border: none;
+  border-bottom: 2px dotted;
+  background: transparent;
+  outline: none;
+  font-size: 14px;
+  vertical-align: 7px;
+  padding: 0px 0;
+  font-weight: bold;
+}
+
+#p_line{
+  line-height: 27px;
+  margin-top: 5px;
+}
+
+#p_margin{
+  margin-top: 17px;
+}
+
+.certificate_btn{
+  margin-top: 100px !important;
+}
+
+#download_btn a{
+  background-color: #0777B9;
+}
+
+#date_txt{
+    font-size: 14px;
+    margin: 0;
+    color: #000;
+    position: absolute;
+    top: 100px;
+    right: 150px;
+}
+
+#span_t{
+  width: 100px !important;
+  border: none;
+  border-bottom: 2px dotted;
+  background: transparent;
+  outline: none;
+  font-size: 14px;
+  vertical-align: 7px;
+  padding: 0px 0;
+  font-weight: bold;
+  text-align: center;
+}

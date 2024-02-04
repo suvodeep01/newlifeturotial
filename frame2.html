@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Life Tutorial</title>
+    <!-- css files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Festive&family=Mountains+of+Christmas:wght@700&family=Roboto+Slab&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+</head>
+
+<body>
+
+    <!-- start header -->
+    <div class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="header_logo">
+                        <img src="images/logo1.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="header_con">
+                        <h3>New Life Tutorial Home</h3>
+                        <h4>CBSE <span>টিউশন</span> - Nursery to 12th</h4>
+                    </div>
+                </div>
+                <div class="col-md-5 p-0">
+                    <div class="header_contact">
+                        <span>
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            <p>Arambagh, Amtola More, 1st Rail Gate</p>
+                        </span>
+                        <span>
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                            <p>8918037712</p>
+                        </span>
+                        <span>
+                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                            <p><a href="#">newlifetutorialhome@gmail.com</a></p>
+                        </span>
+                        <span>
+                            <i class="fa fa-globe" aria-hidden="true"></i>
+                            <p><a href="www.nlth.in">www.nlth.in</a></p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end header -->
+
+    <nav class="sidebar">
+        <div class="menu-content">
+            <ul class="menu-items">
+
+                <li class="item">
+                    <a href="index.html">Brthday Frame</a>
+                </li>
+
+                <li class="item">
+                    <a href="frame2.html">Admission Frame</a>
+                </li>
+
+                <li class="item">
+                    <a href="frame3.html">Certificate Frame</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <nav class="navbar">
+        <i class="fa-solid fa-bars" id="sidebar-close"></i>
+    </nav>
+
+    <main class="main">
+        <!-- start content -->
+        <div class="content">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <div class="frame2_screen" id="download_con">
+                            <div class="frame_img">
+                                <img src="images/frame-2.jpg" alt="" id="frame2_img">
+                                <p id="frame2_txt">
+                                    <span id="output_txt3"></span>
+                                    <span id="output_txt4"></span>
+                                </p>
+                            </div>
+                            <div class="content_img2" id="display_img">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="col-md-6 align-self-center">
+                        <form action="">
+                            <!-- get text name -->
+                            <div class="text_input">
+                                <input type="text" placeholder="Enter First Name" id="name_input">
+                                <input type="text" placeholder="Enter Last Name" id="last_input">
+                                <a href="#" id="name_btn">Add Name</a>
+                            </div>
+                            <div class="content_btn">
+                                <!-- upload img -->
+                                <div class="upload_img">
+                                    <input type="file" onchange="getImagePreview(event)" id="upload" hidden>
+                                    <label for="upload" id="upload_btn">Choose Image</label>
+                                </div>
+                                <!-- download png button -->
+                                <div class="download_btn">
+                                    <a href="##" id="download">Download Image</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- end content -->
+
+        <!-- start footer -->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="footer_con">
+                            <h6>Developed by Srishti Technology</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end footer -->
+    </main>
+
+
+
+    <!-- js files -->
+    <script src="js/bootstrap.js"></script>
+    <script src="js/custom2.js"></script>
+    <script src="js/sidebar.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"
+        integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script>
+            // download png
+document.getElementById("download").onclick = function() {
+    const screenshotTarget = document.getElementById("download_con");
+
+    html2canvas(screenshotTarget).then((canvas) => {
+        const base64image = canvas.toDataURL("image/png");
+        var anchor = document.createElement('a');
+        anchor.setAttribute("href", base64image);
+        anchor.setAttribute("download", "Admission.png");
+        anchor.click();
+        anchor.remove();
+    });
+};
+        </script>
+</body>
+
+</html>
