@@ -119,13 +119,13 @@ body {
   margin-top: 15px;
 }
 
-.content_img img{
-    width: 158px;
-    height: 164px;
-    position: absolute;
-    top: 141px;
-    left: 68px;
-    transform: rotate(-6deg);
+.content_img img {
+  width: 160px;
+  height: 164px;
+  position: absolute;
+  top: 142px;
+  left: 66px;
+  transform: rotate(-6deg);
 }
 
 .frame_img p{
