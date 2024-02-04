@@ -111,16 +111,19 @@ body {
 
 
 .frame_img img{
-    width: 100%;
-    height: auto;
-    margin-top: 15px;
+    width: 540px;
+    height: 540px;
+}
+
+#frame_m{
+  margin-top: 15px;
 }
 
 .content_img img{
-    width: 159px;
+    width: 158px;
     height: 164px;
     position: absolute;
-    top: 156px;
+    top: 141px;
     left: 68px;
     transform: rotate(-6deg);
 }
@@ -416,7 +419,7 @@ body {
   width: 147px;
     height: 146px;
     position: absolute;
-    top: 189px;
+    top: 175px;
     left: 209px;
     transform: rotate(357deg);
 }
@@ -549,4 +552,8 @@ body {
   padding: 0px 0;
   font-weight: bold;
   text-align: center;
+}
+
+#nav_mark{
+  color: gray;
 }
